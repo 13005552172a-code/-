@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+button {
+  border: none; /*边框*/
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none; /* //去掉下划线 */
+}
+body {
+  font-size: 14px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.page-header {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.site-name {
+  font-size: 20px;
+  color: #333333;
+  position: absolute;
+  left: 0;
+}
+.navigation li {
+  display: inline; /* 列表排列样式 */
+  padding: 0 15px; /*间距*/
+}
+
+.navigation li a {
+  color: #333333;
+  font-size: 14px;
+  font-weight: bold; /*粗细*/
+  transition: color 0.5s; /*颜色切换*/
+}
+.navigation li a.active {
+  color: #4ac4f3;
+}
+.login-button {
+  font-weight: bold;
+  padding: 12px 36px;
+  font-size: 14px;
+  color: #4ac4f3;
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0 0 10px #e7e7e7;
+  position: absolute;
+  right: 0;
+}
+
+.navigation li a:hover {
+  color: #4ac4f3;
+}
+.container {
+  position: relative;
+  width: 1350px;
+  height: 90px;
+  margin: 0 auto; /*外边距*/
+  display: flex;
+  justify-content: center; /*水平*/
+  align-items: center; /*垂直*/
+}
+
+/*  */
+/*  */
+.banner {
+  padding-top: 130px;
+  display: flex;
+  flex-direction: column; /*文本布局呈堆叠方式*/
+  align-items: center; /*整个文本的对齐方式*/
+  text-align: center; /*控制内容的对齐方式*/
+}
+.banner h4 {
+  background-color: rgba(74, 196, 243, 0.1);
+  padding: 10px 20px; /*内边距*/
+  border-radius: 7px;
+  font-size: 15px;
+  margin-bottom: 30px; /*底部外边距*/
+}
+
+.banner h2 {
+  font-size: 48px;
+  margin-bottom: 50px;
+  padding: 2px;
+  letter-spacing: 2px; /*字间距*/
+}
+.banner button {
+  font-weight: bold;
+  border-radius: 40px;
+  background-color: #4ac4f3;
+  color: ffffff;
+  padding: 12px 36px;
+}
+.banner .banner-left {
+  position: absolute;
+  left: 120px;
+  bottom: 20px;
+  width: 150px;
+}
+
+.banner .banner-right {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 350px;
+}
+
+/*  */
+/*  */
+.signup {
+  margin-top: 80px;
+  background-color: #4ac4f3;
+  padding: 60px 0;
+  text-align: center; /*块元素或者单元格框的行内内容的水平对齐*/
+}
+.signup h2 {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.signup input {
+  margin: 0 7px;
+  border-radius: 30px;
+  width: 180px;
+  padding: 14px 20px;
+}
+.signup button {
+  font-size: 14px;
+  margin: 0 7px;
+  background-color: #ffffff;
+  color: #4ac4f3;
+  font-weight: bold;
+  padding: 12px 36px;
+  border-radius: 30px;
+}
+
+/*  */
+/*  */
+.feature {
+  width: 1140px;
+  margin: 0 auto;
+  padding: 120px 0 65px 0;
+  text-align: center;
+}
+.feature h2 {
+  font-size: 32px;
+}
+.feature .divider {
+  display: inline-block;
+  width: 50px;
+  height: 3px;
+  background-color: #4ac4f3;
+  border-radius: 3px;
+  position: relative;
+  left: 10px;
+}
+.feature p {
+  color: #666666;
+  margin-top: 15px;
+  font-size: 14px;
+}
+.feature ul {
+  display: flex;
+  flex-wrap: wrap; /*碰到边界自动换行*/
+  margin-top: 60px;
+}
+.feature ul li {
+  width: 33.3333%; /*每个列表到1/3后自动换行*/
+  margin-bottom: 50px;
+  padding: 0 15px;
+}
+
+.feature ul li h4 {
+  font-size: 24px;
+  padding: 20px 0 15px 0;
+}
+.feature ul li p {
+  line-height: 24px;
+}
+.feature .divider::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #4ac4f3;
+  position: absolute;
+  left: -15px;
+}
+
+/*  */
+/*  */
+.page-footer {
+  background-color: #202942;
+  color: #f8f9fa;
+}
+
+.page-footer .top {
+  width: 1140px;
+  padding: 100px 0;
+  display: flex;
+  margin: 0 auto;
+}
+.page-footer .top .introduction {
+  flex: 2;
+  padding-right: 30px;
+}
+.page-footer .top .course,
+.page-footer .top.social-media {
+  flex: 1;
+  padding: 0 15px;
+}
+
+.page-footer .top .contact {
+  width: 96px;
+}
+
+.page-footer h2 {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.page-footer .top .introduction h2 {
+  font-size: 20px;
+}
+
+.page-footer .top .introduction p {
+  color: #adb5bd;
+  height: 24px;
+  font-size: 14px;
+}
+
+.page-footer ul li {
+  margin-top: 10px;
+  height: 24px;
+}
+.page-footer ul li a {
+  color: #adb5bd;
+  font-size: 14px;
+}
+
+.page-footer .botton {
+  padding: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.page-footer .botton .container {
+  width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer .botton p {
+  font-size: 14px;
+}
+.page-footer .botton li {
+  display: inline;
+  margin-left: 20px;
+}
+
+@media (max-width: 1350px) {
+  .page-header .container {
+    width: 100%;
+  }
+
+  .site-name {
+    left: 20px;
+  }
+
+  .login-button {
+    right: 20px;
+  }
+}
+
+@media (max-width: 1140px) {
+  .feature .container,
+  .page-footer .top,
+  .page-footer .bottom .container {
+    width: 100%;
+  }
+
+  .page-footer .top,
+  .page-footer .bottom .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner .banner-left {
+    display: none;
+  }
+
+  .banner h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 640px) {
+  .signup {
+    padding: 40px 0;
+  }
+
+  .signup form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .signup input,
+  .signup button {
+    width: 60%;
+    margin-bottom: 20px;
+  }
+
+  .feature ul li {
+    width: 50%;
+  }
+
+  .page-footer .top {
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .page-footer .top .introduction {
+    flex: 100%;
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+
+  .page-footer .top .course {
+    padding-left: 0;
+  }
+}
